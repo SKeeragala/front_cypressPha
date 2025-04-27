@@ -143,27 +143,26 @@ const InventoryForm = () => {
     return (
         <div style={{
             minHeight: "100vh",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             padding: "1rem",
-            backgroundImage: 'url(path-to-background-image)', // Replace with your background image URL
-        }}>
+            backgroundColor: "rgba(59, 3, 53, 0.3)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+                    }}>
             <div style={{
                 position: "absolute",
                 inset: "0",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "rgba(0, 0, 0, 0.3)", // Slightly lighter overlay
                 backdropFilter: "blur(4px)"
             }}></div>
 
             <div style={{
                 position: "relative",
                 backgroundColor: "rgba(255, 255, 255, 0.95)",
-                borderRadius: "0.5rem",
-                boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)",
+                boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.15)",
                 padding: "1.5rem",
                 width: "100%",
                 maxWidth: "28rem",
@@ -173,7 +172,7 @@ const InventoryForm = () => {
                     fontSize: "24px",
                     fontWeight: "700",
                     textAlign: "center",
-                    color: "#4A4A4A",
+                    color: "#1e40af", // Changed to match gradient
                     marginBottom: "1.5rem"
                 }}>
                     Pharmacy Inventory Management
